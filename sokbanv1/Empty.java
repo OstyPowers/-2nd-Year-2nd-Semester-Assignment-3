@@ -1,0 +1,29 @@
+package com.example.sokbanv1;
+
+public class Empty extends Placeable {
+	public Empty(int x,  int y) {
+		this.symbol = ".";
+		this.x = x;
+		this.y = y;
+	}
+
+	public void addCrate(Crate crate) {
+		this.symbol = crate.toString();
+	
+	}
+
+	public void addWorker(Worker worker) {
+		this.symbol = worker.toString();
+	
+	}
+	
+	public void removeCrate() {
+		this.symbol = ".";
+
+	}
+	
+	public void removeWorker() {
+		this.symbol = "."; 
+	}
+
+}
